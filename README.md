@@ -1,6 +1,5 @@
-## ImageBasedModellingEduV2.0
-ImageBasedModellingEdu2.0 是用于深蓝学院基于图像的三维模型重建课程配套的代码。该代码来源于著名的开源三维重建开源系统MVE(https://github.com/simonfuhrmann/mve)。
-我们其基础之上对代码的架构进行了调整，使其与课程更为相关，有助于阅读和学习。该工程项目采用CMake管理，可与方便的进行跨平台的编译。代码包含特征提取与匹配、对极几何、运动恢复结构、稠密重建、表面重建以及纹理贴图、可视化等模块，将随着课程的深入不断进行更新。
+## ImageBasedModeling-1
+ImageBasedModeling-1来源于ImageBasedModellingEdu2.0 (深蓝学院基于图像的三维模型重建课程配套的代码)。该代码来源于著名的开源三维重建开源系统MVE(https://github.com/simonfuhrmann/mve)。
 
 ## 架构
 该工程主要包含core, math, util, features, sfm, mvs, surface, texturing等主要模块，其中：
