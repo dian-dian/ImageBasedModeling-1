@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g CMakeFiles/task1_test_math_basic.dir/task1-1_test_math_basic.cc.o -o task1_test_math_basic  -Wl,-rpath,/usr/local/lib ../../util/libutil.a ../../core/libcore.a ../../util/libutil.a /usr/local/lib/libpng.so /usr/local/lib/libz.so /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/x86_64-linux-gnu/libtiff.so 

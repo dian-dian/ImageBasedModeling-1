@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g CMakeFiles/task8_1_3d_shapes.dir/task8_1_3d_shapes.cc.o -o task8_1_3d_shapes  /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libglut.so /usr/lib/x86_64-linux-gnu/libXi.so -lGLU -lstdc++ 

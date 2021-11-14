@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yifan/Downloads/ImageBasedModellingEdu-main/examples/task8/task8_3_texturing.cc
+iostream
+-
+GL/glew.h
+-
+GLUT/glut.h
+-
+GL/glut.h
+-
+GL/gl.h
+-
+
