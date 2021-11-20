@@ -148,9 +148,12 @@ Matching::oneway_match (Options const& options,
         // 标准1： 与最近邻的距离必须小于特定阈值
         if (nn_result.dist_1st_best > square_dist_thres)
             continue;
-
-
-
+        if (static_cast<float>(nn_result.dist_1st_best)
+            / static_cast<float>(nn_result.dist_2nd_best)
+            > MATH_POW2(options.lowe_ratio_threshold))
+            continue;
+        // 匹配成功，feature set1 中第i个特征值对应feature set2中的第index_1st_best个特征点
+        result->at(i) = nn_result.index_1st_best;
 
         /***********************task2*************************************/
         // 标准2： 与最近邻和次紧邻的距离比必须小于特定阈值
@@ -166,12 +169,6 @@ Matching::oneway_match (Options const& options,
                /*                  */
         /*******************************10696_10015b911522757f6?bizid=10696&txSecret=63384d4bd569e29729b6995dd8a9eefb&txTime=5B93EFB6**********************************/
 
-        if (static_cast<float>(nn_result.dist_1st_best)
-            / static_cast<float>(nn_result.dist_2nd_best)
-            > MATH_POW2(options.lowe_ratio_threshold))
-            continue;
-        // 匹配成功，feature set1 中第i个特征值对应feature set2中的第index_1st_best个特征点
-        result->at(i) = nn_result.index_1st_best;
     }
 }
 
