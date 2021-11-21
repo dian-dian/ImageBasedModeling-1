@@ -5,6 +5,9 @@
 #include "math/matrix.h"
 #include "math/vector.h"
 
+#include <string>
+#include <iostream>
+
 #include "core/image_io.h"
 #include "core/image.h"
 #include "core/image_tools.h"
@@ -380,6 +383,15 @@ main (int argc, char *argv[])
         std::cout<<"-->";
         std::cout<<"( "<<new_pts_3d[i][0]<<", "<<new_pts_3d[i][1]<<", "<<new_pts_3d[i][2]<<" )"<<std::endl;
     }
+
+    std::string file_name = "/home/yifan/Desktop/task2-5.txt";
+    std::ifstream file(file_name);
+    std::string txt;
+
+    while(getline(file,txt)){
+        std::cout<<txt<<std::endl;
+    }
+
 
 //    math::Matrix<double, 3, 4> P1, P2;
 //    new_cam_poses[0].fill_p_matrix(&P1);
