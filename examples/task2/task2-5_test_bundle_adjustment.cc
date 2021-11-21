@@ -384,13 +384,13 @@ main (int argc, char *argv[])
         std::cout<<"( "<<new_pts_3d[i][0]<<", "<<new_pts_3d[i][1]<<", "<<new_pts_3d[i][2]<<" )"<<std::endl;
     }
 
-    std::string file_name = "/home/yifan/Desktop/task2-5.txt";
+/*    std::string file_name = "/home/yifan/Desktop/task2-5.txt";
     std::ifstream file(file_name);
     std::string txt;
 
     while(getline(file,txt)){
         std::cout<<txt<<std::endl;
-    }
+    }*/
 
 
 //    math::Matrix<double, 3, 4> P1, P2;
