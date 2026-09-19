@@ -1,5 +1,4 @@
-## ImageBasedModeling-1
-ImageBasedModeling-1来源于ImageBasedModellingEdu2.0 (深蓝学院基于图像的三维模型重建课程配套的代码)。该代码来源于著名的开源三维重建开源系统MVE(https://github.com/simonfuhrmann/mve)。
+该代码来源于著名的开源三维重建开源系统MVE(https://github.com/simonfuhrmann/mve)。
 
 ## 架构
 该工程主要包含core, math, util, features, sfm, mvs, surface, texturing等主要模块，其中：
